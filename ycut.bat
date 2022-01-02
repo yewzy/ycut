@@ -1,5 +1,5 @@
 @echo off
-echo Welcome to Yew the Barber- The best and fastest video trimmer in the world!
+echo Welcome to Ycut- The best and fastest video trimmer in the world*!
 set /p location="Original Video Location (Drag and Drop): "
 set dlocation=%~dp0
 set /p dlocation="Trimmed Video Folder (or press enter for %dlocation%): "
