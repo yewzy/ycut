@@ -18,8 +18,6 @@ set /p et="End Time (HH:MM:SS): "
 if not x%st::=%==x%st% (set starttime=%st%) else (set starttime=%st:~0,2%:%st:~2,2%:%st:~4,2%)
 if not x%et::=%==x%et% (set endtime=%et%) else (set endtime=%et:~0,2%:%et:~2,2%:%et:~4,2%)
 set /p filename="Trimmed Video Name:"
-echo -ss %starttime% -to %endtime% -i %location% -c copy "%dlocation%%filename%".mp4
-pause
 ffmpeg -ss %starttime% -to %endtime% -i %location% -c copy "%dlocation%%filename%".mp4
 echo %filename% completed
 pause
